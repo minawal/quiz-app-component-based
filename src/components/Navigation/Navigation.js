@@ -26,3 +26,48 @@ export default function Navigation(onNavigate) {
 
   return createElement('nav', { className: 'Navigation' }, ...buttons)
 }
+
+/*
+  const [home, bookmarks, create, settings] = buttonsConfig
+  const homeButton = createElement(
+    'button',
+    { className: 'Navigation__button' },
+    createElement('img', { src: home.svgPath, alt: '' }),
+    home.text
+  )
+  const bookmarksButton = createElement(
+    'button',
+    { className: 'Navigation__button' },
+    createElement('img', { src: bookmarks.svgPath, alt: '' }),
+    bookmarks.text
+  )
+  const createButton = createElement(
+    'button',
+    { className: 'Navigation__button' },
+    createElement('img', { src: create.svgPath, alt: '' }),
+    create.text
+  )
+  const settingsButton = createElement(
+    'button',
+    { className: 'Navigation__button' },
+    createElement('img', { src: settings.svgPath, alt: '' }),
+    settings.text
+  )
+
+  createButton.addEventListener('click', () => onNavigate(create.text))
+
+  homeButton.addEventListener('click', () => onNavigate(home.text))
+
+  const el = createElement(
+    'nav',
+    { className: 'Navigation' },
+    homeButton,
+    bookmarksButton,
+    createButton,
+    settingsButton
+  )
+
+  return el
+} 
+
+ */
